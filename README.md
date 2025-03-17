@@ -1,12 +1,67 @@
-# React + Vite
+# NMI Processor
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#tech-stack">Tech Stack</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#run-project-locally">Run project locally</a></li>
+      </ul>
+    </li>
+  </ol>
+</details>
 
-Currently, two official plugins are available:
+<!-- ABOUT THE PROJECT -->
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## About The Project
 
-## Expanding the ESLint configuration
+NMI Processor enables the following features:
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- User can upload CSV file (via click / drag and drop)
+- User can submit the file for processing
+- User can view the generated SQL INSERT statements
+- User can delete uploaded file
+- User can try to generate statements again if parser fails
+
+### Tech Stack
+
+- React.js
+- TypeScript
+- styled-components
+- PapaParse
+- vite
+- vitest
+
+<!-- GETTING STARTED -->
+
+## Getting Started
+
+### Run project locally
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/iamjeremylim/nmi_processor
+   ```
+2. Change directory to project root folder
+3. Install dependencies
+   ```sh
+   npm install
+   ```
+4. Run app in development mode
+   ```sh
+   npm run dev
+   ```
+5. Run unit tests
+   ```sh
+   npm test
+   ```
+
+<p align="right">(<a href="#simple-bank">back to top</a>)</p>
