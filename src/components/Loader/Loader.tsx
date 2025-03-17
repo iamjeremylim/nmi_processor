@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Loader as LoaderIcon } from "react-feather";
+import FeatherIcon from "feather-icons-react";
 
 const LoaderWrapper = styled.div`
   display: flex;
@@ -21,13 +21,17 @@ const LoaderWrapper = styled.div`
   }
 `;
 
-const Loader: React.FC = () => {
+interface LoaderProps {
+  text?: string;
+}
+
+const Loader = ({ text = "Work in progress" }: LoaderProps) => {
   return (
     <LoaderWrapper>
-      <div className="loader-icon">
-        <LoaderIcon />
+      <div className="loader-icon" data-testid="loader">
+        <FeatherIcon icon="loader" />
       </div>
-      <span>Work in progress</span>
+      <span>{text}</span>
     </LoaderWrapper>
   );
 };
